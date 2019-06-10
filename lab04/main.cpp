@@ -10,17 +10,17 @@ struct Student
     float aver_mark;
     uint8_t gender : 1;
     uint16_t fin_courses;
-    Student* headman;
+    Student* starosta;
 };
 
 
 int main() {
-/*
+
     uint16_t first, second;
     char oper;
     cin >> first >> oper >> second;
     byte_calc( first, second, oper );
-*/
+/*
     
     Student students[3];
     
@@ -29,21 +29,21 @@ int main() {
     students[0].aver_mark = 4.3f;
     students[0].gender = 1;
     students[0].fin_courses = 1;
-    students[0].headman = nullptr;
+    students[0].starosta = nullptr;
     
-    strcpy( students[0].name, "Maks" );
+    strcpy( students[0].name, "Maksim" );
     students[1].entr_year = 2018;
     students[1].aver_mark = 3.8f;
     students[1].gender = 1;
     students[1].fin_courses = 1;
-    students[1].headman = &students[0];
+    students[1].starosta = &students[0];
     
-    strcpy( students[0].name, "Ann" );
+    strcpy( students[0].name, "Anna" );
     students[1].entr_year = 2018;
     students[1].aver_mark = 4.8f;
     students[1].gender = 0;
     students[1].fin_courses = 1;
-    students[1].headman = &students[0];
+    students[1].starosta = &students[0];
     
     cout << "Adres massiva: " << &students
     << "\nRazmer massiva: " << sizeof(students);
@@ -99,14 +99,14 @@ int main() {
     print_in_hex( &students[1].fin_courses, sizeof( students[1].fin_courses ) );
     
     cout << "\n\nStarosta:"
-    << "\nAdres: " << &students[1].headman
-    << "\nSmeshcheniye ot nachala: " << offsetof( Student, headman )
-    << "\nRazmer: " << sizeof( students[1].headman )
+    << "\nAdres: " << &students[1].starosta
+    << "\nSmeshcheniye ot nachala: " << offsetof( Student, starosta )
+    << "\nRazmer: " << sizeof( students[1].starosta )
     << "\nBinary: ";
-    print_in_binary( &students[1].headman, sizeof( students[1].headman ) );
+    print_in_binary( &students[1].starosta, sizeof( students[1].starosta ) );
     cout << "\nHexadecimal: ";
-    print_in_hex( &students[1].headman, sizeof( students[1].headman ) );
-    
+    print_in_hex( &students[1].starosta, sizeof( students[1].starosta ) );
+    */
     
     return 0;
 }
